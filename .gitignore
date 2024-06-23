@@ -1,0 +1,27 @@
+#Ignore everything
+/*
+
+#Allow directories to be traversed
+!*/
+
+#Include these files
+!docker-compose.yaml
+!.gitignore
+
+
+#Ignore everything in suitecrm_data except the custom directories
+suitecrm_data/*
+!suitecrm_data/custom/
+!suitecrm_data/modules/
+!suitecrm_data/include/
+suitecrm_data/custom/history
+suitecrm_data/custom/working/
+
+
+#Ignore specific operational and data directories
+mariadb_data/
+
+# Ignore specific files
+.env
+.DS_Store
+
