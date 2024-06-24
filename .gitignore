@@ -22,6 +22,7 @@ suitecrm_data/custom/working/
 mariadb_data/
 
 # Ignore specific files
+liquibase.properties
 .env
 .DS_Store
 
